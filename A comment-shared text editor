@@ -1,0 +1,21 @@
+When we meet bugs, create confusing codes or try to inform someone, we write comments in our code. 
+But sometimes there isn't any comment in a buggy file or confusing codes.
+And we can't find solutions in stackoverflow or anywhere we know.
+
+I think it would be beneficial to share our comments on similar codes. Here are my thoughts:
+We divide comments into public comments and private comments, if your comment is personal or confidental, 
+create private comments by the traditional '//...' or '/*...*/', and the editor will not specify them.
+Or we can create public comments by '//pubbblllic...' or '/*pubbb...lllic*/' to let the editor find those comments and upload to the server.
+And use maybe '//pubbblllic *tag1,tag2...tagn* ...' or '/*pubbb *tag1,tag2,...tagn* ... lllic*/ to tag the comments.
+The editor will also fetch the context code, language, contributer username and store them privately in the server.
+
+When an user needs help about some problems, the user selects the related codes and type in some tags.
+The editor use machine learning to find the most likely useful pieces of comments and show them to the user.
+The comment can be scored by the user by:
+helpful / no help / buggy / elegant / ...
+And if the user find all comments shown are useless, they can click 'show me more' to get more comments.
+
+When the algorithms compare two blocks of code, all user-defined variable names and funtion names shall be turned into something like
+'int_var_1' 'string_array_3' 'structPtr_func_0' to avoid the difference caused by naming.
+
+And I think it's better to use NLP algorithms to turn the words into vectors and store the vectors in the server.
